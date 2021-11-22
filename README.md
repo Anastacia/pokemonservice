@@ -21,6 +21,15 @@ Once logged in users can view a list of pokemons, there are some private, meanin
 * MySql Version 8.0
 * Maven-4.0.0
 * JSON Web Token (JWT)
+ * Java 11
+
+## Installation
+***
+$ Configure mysql, create a local DB called Pokemondb with user = root and password = root
+$ Make sure you have jdk/11 and jre well configured.
+$ Go to https://we.tl/t-GOzMxqbzbY and download the jar file into a folder in C:/, called Service-Pokemon
+$ Open a cmd console and navigate to the route where the jar is and execute the following command java -jar Service-Pokemon-0.0.1-SNAPSHOT.jar
+$ The app wil start
 
 
 
