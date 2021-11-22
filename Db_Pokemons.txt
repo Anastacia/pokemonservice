@@ -1,0 +1,55 @@
+CREATE DATABASE  IF NOT EXISTS `pokemondb` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `pokemondb`;
+-- MySQL dump 10.13  Distrib 8.0.27, for Win64 (x86_64)
+--
+-- Host: localhost    Database: pokemondb
+-- ------------------------------------------------------
+-- Server version	8.0.27
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `pokemons`
+--
+
+DROP TABLE IF EXISTS `pokemons`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `pokemons` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `type1` varchar(255) DEFAULT NULL,
+  `hp` int DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=101 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `pokemons`
+--
+
+LOCK TABLES `pokemons` WRITE;
+/*!40000 ALTER TABLE `pokemons` DISABLE KEYS */;
+INSERT INTO `pokemons` VALUES (1,'Bulbasaur','Grass',45),(2,'Ivysaur','Grass',60),(3,'Venusaur','Grasas',80),(4,'VenusaurMega Venusaur','Grass',80),(5,'Charmander','Fire',39),(6,'Charmeleon','Fire',58),(7,'Charizard','Fire',78),(8,'CharizardMega Charizard X','Fire',78),(9,'CharizardMega Charizard Y','Fire',78),(10,'Squirtle','Water',44),(11,'Wartortle','Water',59),(12,'Blastoise','Water',79),(13,'BlastoiseMega Blastoise','Water',79),(14,'Caterpie','Bug',45),(15,'Metapod','Bug',50),(16,'Butterfree','Bug',60),(17,'Weedle','Bug',40),(18,'Kakuna','Bug',45),(19,'Beedrill','Bug',65),(20,'BeedrillMega Beedrill','Bug',65),(21,'Pidgey','Normal',40),(22,'Pidgeotto','Normal',63),(23,'Pidgeot','Normal',83),(24,'PidgeotMega Pidgeot','Normal',83),(25,'Rattata','Normal',30),(26,'Raticate','Normal',55),(27,'Spearow','Normal',40),(28,'Fearow','Normal',65),(29,'Ekans','Poison',35),(30,'Arbok','Poison',60),(31,'Pikachu','Electric',35),(32,'Raichu','Electric',60),(33,'Sandshrew','Ground',50),(34,'Sandslash','Ground',75),(35,'Nidoran‚ôÄ','Poison',55),(36,'Nidorina','Poison',70),(37,'Nidoqueen','Poison',90),(38,'Nidoran‚ôÇ','Poison',46),(39,'Nidorino','Poison',61),(40,'Nidoking','Poison',81),(41,'Clefairy','Fairy',70),(42,'Clefable','Fairy',95),(43,'Vulpix','Fire',38),(44,'Ninetales','Fire',73),(45,'Jigglypuff','Normal',115),(46,'Wigglytuff','Normal',140),(47,'Zubat','Poison',40),(48,'Golbat','Poison',75),(49,'Oddish','Grass',45),(50,'Gloom','Grass',60),(51,'Vileplume','Grass',75),(52,'Paras','Bug',35),(53,'Parasect','Bug',60),(54,'Venonat','Bug',60),(55,'Venomoth','Bug',70),(56,'Diglett','Ground',10),(57,'Dugtrio','Ground',35),(58,'Meowth','Normal',40),(59,'Persian','Normal',65),(60,'Psyduck','Water',50),(61,'Golduck','Water',80),(62,'Mankey','Fighting',40),(63,'Primeape','Fighting',65),(64,'Growlithe','Fire',55),(65,'Arcanine','Fire',90),(66,'Poliwag','Water',40),(67,'Poliwhirl','Water',65),(68,'Poliwrath','Water',90),(69,'Abra','Psychic',25),(70,'Kadabra','Psychic',40),(71,'Alakazam','Psychic',55),(72,'AlakazamMega Alakazam','Psychic',55),(73,'Machop','Fighting',70),(74,'Machoke','Fighting',80),(75,'Machamp','Fighting',90),(76,'Bellsprout','Grass',50),(77,'Weepinbell','Grass',65),(78,'Victreebel','Grass',80),(79,'Tentacool','Water',40),(80,'Tentacruel','Water',80),(81,'Geodude','Rock',40),(82,'Graveler','Rock',55),(83,'Golem','Rock',80),(84,'Ponyta','Fire',50),(85,'Rapidash','Fire',65),(86,'Slowpoke','Water',90),(87,'Slowbro','Water',95),(88,'SlowbroMega Slowbro','Water',95),(89,'Magnemite','Electric',25),(90,'Magneton','Electric',50),(91,'Farfetch\'d','Normal',52),(92,'Doduo','Normal',35),(93,'Dodrio','Normal',60),(94,'Seel','Water',65),(95,'Dewgong','Water',90),(96,'Grimer','Poison',80),(97,'Muk','Poison',105),(98,'Shellder','Water',30),(99,'Cloyster','Water',50),(100,'Gastly','Ghost',30);
+/*!40000 ALTER TABLE `pokemons` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2021-11-21 16:49:55
